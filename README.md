@@ -1,10 +1,29 @@
-Eureka server port: 8070,
-Config server port: 8888,
-Account service port: 8081,
-User service port:8082,
-Loan service port:8083,
-Config-server port: 8888,
-card-server - port: 8084,
-api-gateway -port: 8085
+# 📘 Microservices - Port Mapping
 
+This project contains multiple microservices with the following port configurations:
 
+| Service         | Port |
+|-----------------|------|
+| 🛰️ Eureka Server  | **8070** |
+| ⚙️ Config Server  | **8888** |
+| 🏦 Account Service | **8081** |
+| 👤 User Service    | **8082** |
+| 💰 Loan Service    | **8083** |
+| 💳 Card Service    | **8084** |
+| 🌐 API Gateway     | **8085** |
+
+---
+
+## 🚀 Quick Start
+
+1. Start **Config Server** (`8888`)
+2. Start **Eureka Server** (`8070`)
+3. Start business microservices:
+   - Account Service (`8081`)
+   - User Service (`8082`)
+   - Loan Service (`8083`)
+   - Card Service (`8084`)
+   - Transaction Service (`8086`)
+4. Start **API Gateway** (`8085`)
+
+All client requests should be routed through the **API Gateway**.
